@@ -38,6 +38,23 @@ describe('WAValidator.validate()', function () {
             valid('2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7', 'bitcoin', 'testnet');
         });
 
+        it('should return true for correct bcash addresses', function () {
+            valid('12KYrjTdVGjFMtaxERSk3gphreJ5US8aUP', 'bcash');
+            valid('12QeMLzSrB8XH8FvEzPMVoRxVAzTr5XM2y', 'bcash');
+            valid('12QeMLzSrB8XH8FvEzPMVoRxVAzTr5XM2y', 'BCH');
+            valid('12QeMLzSrB8XH8FvEzPMVoRxVAzTr5XM2y', 'Bitcoin');
+            valid('12QeMLzSrB8XH8FvEzPMVoRxVAzTr5XM2y', 'bch');
+            valid('12QeMLzSrB8XH8FvEzPMVoRxVAzTr5XM2y', 'bch', 'prod');
+            valid('12QeMLzSrB8XH8FvEzPMVoRxVAzTr5XM2y', 'bch', 'both');
+            valid('1oNLrsHnBcR6dpaBpwz3LSwutbUNkNSjs', 'bcash');
+            valid('mzBc4XEFSdzCDcTxAgf6EZXgsZWpztRhef', 'bcash', 'testnet');
+            valid('mzBc4XEFSdzCDcTxAgf6EZXgsZWpztRhef', 'bcash', 'both');
+
+            // p2sh addresses
+            valid('3NJZLcZEEYBpxYEUGewU4knsQRn1WM5Fkt', 'bcash');
+            valid('2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7', 'bcash', 'testnet');
+        });
+
         it('should return true for correct litecoin addresses', function () {
             valid('LVg2kJoFNg45Nbpy53h7Fe1wKyeXVRhMH9', 'litecoin');
             valid('LVg2kJoFNg45Nbpy53h7Fe1wKyeXVRhMH9', 'LTC');
@@ -47,7 +64,9 @@ describe('WAValidator.validate()', function () {
 
             // p2sh addresses
             valid('3NJZLcZEEYBpxYEUGewU4knsQRn1WM5Fkt', 'litecoin');
+            valid('MCyAqan5JAkmvm94gqHNKNjbvcfSnytyJm', 'litecoin');
             valid('2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7', 'litecoin', 'testnet');
+            valid('QYkcLRbhqftzUUubHfyMdK5NsUA9S5LdaY', 'litecoin', 'testnet');
         });
 
         it('should return true for correct peercoin addresses', function () {
@@ -172,6 +191,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect bitcoin addresses', function () {
             commonTests('bitcoin');
+        });
+
+        it('should return false for incorrect bcash addresses', function () {
+            commonTests('bcash');
         });
 
         it('should return false for incorrect litecoin addresses', function () {

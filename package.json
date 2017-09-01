@@ -3,6 +3,7 @@
   "description": "Wallet address validator for Bitcoin and other Altcoins.",
   "keywords": [
     "bitcoin",
+    "bcash",
     "litecoin",
     "dogecoin",
     "altcoin",
@@ -13,13 +14,13 @@
     "browser",
     "nodejs"
   ],
-  "version": "0.1.0",
-  "author": "Tomek Kolasa <tomek@kolasa.me>",
-  "homepage": "https://github.com/ognus/wallet-address-validator",
+  "version": "0.2.0",
+  "author": "Vlad Nistor <vlad@coinflux.com>",
+  "homepage": "https://github.com/CoinFlux/wallet-address-validator",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ognus/wallet-address-validator.git"
+    "url": "https://github.com/CoinFlux/wallet-address-validator.git"
   },
   "main": "src/wallet_address_validator",
   "engines": {
@@ -37,4 +38,3 @@
     "mocha": "latest"
   }
 }
-

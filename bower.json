@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "keywords": [
     "bitcoin",
+    "bcash",
     "litecoin",
     "dogecoin",
     "altcoin",
@@ -15,7 +16,7 @@
     "nodejs"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/ognus/wallet-address-validator",
+  "homepage": "https://github.com/CoinFlux/wallet-address-validator",
   "main": "dist/wallet-address-validator.min.js",
   "devDependencies": {
     "jssha": "1.6.0"

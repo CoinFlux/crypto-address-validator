@@ -46,7 +46,7 @@
             var correctAddressTypes,
                 currency = currencies.getByNameOrSymbol(currencyNameOrSymbol),
                 addressType = this.getAddressType(address);
-            
+
             if(networkType === 'prod' || networkType === 'testnet'){
                 correctAddressTypes = currency.addressTypes[networkType]
             } else {
@@ -64,5 +64,3 @@
         window.WAValidator = WAValidator;
     }
 })(typeof module !== 'undefined' && typeof module.exports !== 'undefined');
-
-

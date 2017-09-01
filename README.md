@@ -1,9 +1,9 @@
 # wallet-address-validator
-Simple wallet address validator for validating Bitcoin and other altcoins addresses in **Node.js and browser**. 
+Simple wallet address validator for validating Bitcoin and other altcoins addresses in **Node.js and browser**.
 
-Forked from [ryanralph/altcoin-address](https://github.com/ryanralph/altcoin-address).
+Forked from [ivands/crypto-address-validator](https://github.com/ivands/crypto-address-validator)
 
-I forked it to remove all Node.js dependencies (crypro, Buffer etc.) to make it usable in the browser as well. I didn't use browserify to achieve smaller footprint, **file size is 4.0 kB (minifed and gzipped)**.
+I forked it to include the new Litecoin address prefix format to add bitcoin cash support, **file size is 4.0 kB (minifed and gzipped)**.
 
 ## Installation
 
@@ -30,7 +30,7 @@ bower install wallet-address-validator
 ###### Parameters
 * address - Wallet address to validate.
 * currency - Optional. Currency name or symbol, e.g. `'bitcoin'` (default), `'litecoin'` or `'LTC'`
-* networkType - Optional. Use `'prod'` (default) to enforce standard address, `'testnet'` to enforce testnet address and `'both'` to enforce nothing. 
+* networkType - Optional. Use `'prod'` (default) to enforce standard address, `'testnet'` to enforce testnet address and `'both'` to enforce nothing.
 
 > Returns true if the address (string) is a valid wallet address for the crypto currency specified, see below for supported currencies.
 
@@ -44,6 +44,7 @@ bower install wallet-address-validator
 ### Supported crypto currencies
 
 * Bitcoin/BTC, `'bitcoin'` or `'BTC'`
+* Bcash/BCH, `'bcash'` or `'BCH'`
 * Litecoin/LTC, `'litecoin'` or `'LTC'`
 * Peercoin/PPCoin/PPC, `'peercoin'` or `'PPC'`
 * Dogecoin/DOGE, `'dogecoin'` or `'DOGE'`

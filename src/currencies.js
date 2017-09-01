@@ -5,9 +5,13 @@
             symbol: 'btc',
             addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']}
         },{
+          name: 'bcash',
+          symbol: 'bch',
+          addressTypes: {prod: ['00', '05'], testnet: ['6f', 'c4']}
+        },{
             name: 'litecoin',
             symbol: 'ltc',
-            addressTypes: {prod: ['30', '05'], testnet: ['6f', 'c4']}
+            addressTypes: {prod: ['30', '05', '32'], testnet: ['6f', 'c4', '3a']}
         },{
             name: 'peercoin',
             symbol: 'ppc',
