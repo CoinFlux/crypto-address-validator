@@ -3,7 +3,7 @@ Simple wallet address validator for validating Bitcoin and other altcoins addres
 
 Forked from [ivands/crypto-address-validator](https://github.com/ivands/crypto-address-validator)
 
-I forked it to include the new Litecoin address prefix format to add bitcoin cash support, **file size is 4.0 kB (minifed and gzipped)**.
+I forked it to include the new Litecoin address prefix format and to add bitcoin cash support, **file size is 4.0 kB (minifed and gzipped)**.
 
 ## Installation
 
