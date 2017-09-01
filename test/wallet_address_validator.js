@@ -47,7 +47,8 @@ describe('WAValidator.validate()', function () {
 
             // p2sh addresses
             valid('3NJZLcZEEYBpxYEUGewU4knsQRn1WM5Fkt', 'litecoin');
-            valid('2MxKEf2su6FGAUfCEAHreGFQvEYrfYNHvL7', 'litecoin', 'testnet');
+            valid('MCyAqan5JAkmvm94gqHNKNjbvcfSnytyJm', 'litecoin');
+            valid('QYkcLRbhqftzUUubHfyMdK5NsUA9S5LdaY', 'litecoin', 'testnet');
         });
 
         it('should return true for correct peercoin addresses', function () {
