@@ -174,6 +174,14 @@ describe('WAValidator.validate()', function () {
             valid('NCPPc7Pzb75CpRPJQPRRh6ouJTq7BCy1H4', 'namecoin');
             valid('NCPPc7Pzb75CpRPJQPRRh6ouJTq7BCy1H4', 'NMC');
         });
+
+        it('should return true for correct postcoin addresses', function () {
+            valid('PJzedgWwy15XjkANLFB8tjQRvGqTa8Eoo4', 'postcoin');
+            valid('PLMHRx4mahV9ER2gvtGoHXVoDV4vXZFQWx', 'postcoin');
+            valid('PWU5zwWfwkJ6qe2oULt3tpytPyrjGZ1DcR', 'postcoin');
+            valid('PSPFeBDrEYkpDrzUGGeez4d7LgK2agQFcN', 'postcoin');
+            valid('PBr8QAv864poZH5G3HUQiqT9P8DcxQr7k6', 'POST');
+        });
     });
 
     describe('invalid results', function () {
@@ -235,6 +243,10 @@ describe('WAValidator.validate()', function () {
 
         it('should return false for incorrect namecoin addresses', function () {
             commonTests('namecoin');
+        });
+
+        it('should return false for incorrect postcoin addresses', function () {
+            commonTests('postcoin');
         });
 
     });
