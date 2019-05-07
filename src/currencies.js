@@ -52,7 +52,11 @@
             name: 'dash',
             symbol: 'dash',
             addressTypes: {prod: ['4c', '10'], testnet: ['8c', '13']}
-        }];
+        },{
+        name: 'postcoin',
+        symbol: 'post',
+        addressTypes: {prod: ['37', '1c'], testnet: ['6f', 'c4']}
+    }];
 
 
     var currencies = {
