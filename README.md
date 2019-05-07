@@ -55,6 +55,7 @@ bower install crypto-wallet-address-validator
 * Primecoin/XPM, `'primecoin'` or `'XPM'`
 * Auroracoin/AUR, `'auroracoin'` or `'AUR'`
 * Namecoin/NMC, `'namecoin'` or `'NMC'`
+* Postcoin/POST, `'postcoin'` or `'POST'`
 
 ### Usage example
 
